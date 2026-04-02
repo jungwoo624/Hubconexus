@@ -1,1 +1,47 @@
-/* Add styles here */
+body {
+    background-color: #1a1a1a; /* Deeper black with a hint of texture via noise later */
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%232d2d2d' fill-opacity='0.1'%3E%3Crect x='0' y='0' width='100' height='100'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container {
+    text-align: center;
+    background: rgba(44, 44, 44, 0.5);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+#generator-btn {
+    background: linear-gradient(145deg, #f0943f, #e62f6b, #9c34a3, #4b44a4);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(230, 47, 107, 0.4);
+}
+
+#generator-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(230, 47, 107, 0.6);
+}
